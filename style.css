@@ -37,32 +37,38 @@ nav.navbar {
 .nav-links a:hover, .nav-links .dropdown:hover .dropbtn {
     background: #126bc3;
 }
+.dropdown {
+    position: relative;
+}
 .dropdown-content {
     display: none;
     position: absolute;
     left: 0;
-    top: calc(100% + 4px);
-    background-color: #fff;
-    min-width: 160px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-    z-index: 1;
-    border-radius: 0 0 7px 7px;
+    top: 110%;
+    background-color: #ffffff;
+    min-width: 190px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+    z-index: 999;
+    border-radius: 6px;
     overflow: hidden;
 }
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
     display: block;
 }
 .dropdown-content a {
     display: block;
-    color: #1780e0;
-    background: #fff;
-    border-radius: 0;
-    padding: 0.6em 1.1em;
+    color: #1b2a3b;
+    background: #ffffff;
+    padding: 0.65em 1.2em;
     font-size: 0.95em;
     border-bottom: 1px solid #eef3ff;
 }
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
 .dropdown-content a:hover {
-    background: #f7faff;
+    background: #f0f5ff;
 }
 .hero {
     display: flex;
@@ -203,5 +209,23 @@ footer {
   .nav-links li { margin:0.4em 0; }
   .widgets-row { flex-direction:column; }
   .widget.card, .project-card { max-width:100%; min-width:0; }
+  /* Mobile-friendly dropdown: show items inline as normal links */
+  .dropdown-content {
+      position: static;
+      min-width: 100%;
+      box-shadow: none;
+      border-radius: 0;
+      display: block;
+      background: transparent;
+  }
+  .dropdown-content a {
+      padding-left: 1.6em;
+      background: transparent;
+      border-bottom: none;
+      color: #ffffff;
+  }
+  .dropdown-content a:hover {
+      background: rgba(255,255,255,0.12);
+  }
 }
 
