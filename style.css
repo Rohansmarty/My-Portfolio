@@ -41,7 +41,7 @@ nav.navbar {
     display: none;
     position: absolute;
     left: 0;
-    top: 100%;
+    top: calc(100% + 4px);
     background-color: #fff;
     min-width: 160px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.12);
@@ -53,10 +53,13 @@ nav.navbar {
     display: block;
 }
 .dropdown-content a {
+    display: block;
     color: #1780e0;
     background: #fff;
     border-radius: 0;
-    padding: 0.7em 1em;
+    padding: 0.6em 1.1em;
+    font-size: 0.95em;
+    border-bottom: 1px solid #eef3ff;
 }
 .dropdown-content a:hover {
     background: #f7faff;
