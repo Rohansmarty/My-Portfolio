@@ -5,57 +5,294 @@
     <title>Rohan Shamanthula | Java Full Stack Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script defer src="script.js"></script>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-logo">Rohan S.</div>
-        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropbtn">Resume</a>
-                <div class="dropdown-content">
-                  <a href="resume.html#experience">Experience</a>
-                  <a href="resume.html#skills">Skills</a>
-                  <a href="resume.html#certs">Certifications</a>
-                </div>
-            </li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+        <a href="#greeting" class="logo">
+            <span class="grey-color">&lt;</span>
+            <span class="logo-name">Rohan Shamanthula</span>
+            <span class="grey-color">/&gt;</span>
+        </a>
+        <input class="menu-btn" type="checkbox" id="menu-btn">
+        <label class="menu-icon" for="menu-btn">
+            <span class="navicon"></span>
+        </label>
+        <ul class="menu">
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Work Experiences</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact Me</a></li>
         </ul>
-    </nav>
-    <section class="hero">
-        <img src="assets/rohan-profile.jpg" alt="Rohan Shamanthula" class="profile-pic">
-        <div class="hero-text">
-            <h1>Rohan Shamanthula</h1>
-            <h2>Java Full Stack Developer</h2>
-            <p>Mountainview, CA | +1 (316)-928-9781 | shamanthularohan@gmail.com</p>
-            <p>Java Full Stack Developer with 3+ years of experience designing, developing, and deploying scalable web applications with Java/J2EE and cloud solutions.</p>
-            <a class="cta-button" href="resume.html" target="_blank">View Resume</a>
-            <a class="cta-outline" href="assets/Rohan_Shamanthula_Resume.pdf" download>Download Resume (PDF)</a>
+    </header>
+
+    <!-- Greeting Section -->
+    <section class="greet-main" id="greeting">
+        <div class="greeting-main">
+            <div class="greeting-text-div">
+                <div>
+                    <h1 class="greeting-text">
+                        Hi all, I'm Rohan <span class="wave-emoji">👋</span>
+                    </h1>
+                    <p class="greeting-text-p subTitle">
+                        A passionate Java Full Stack Developer 🚀 with 3+ years of experience designing, developing, and deploying scalable web applications using Java/J2EE technologies and cloud-based solutions.
+                    </p>
+                    <div class="social-media-div">
+                        <a href="https://github.com/Rohansmarty" target="_blank" class="icon-button github">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/rohan-shamanthula/" target="_blank" class="icon-button linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:shamanthularohan@gmail.com" class="icon-button google">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    <div class="button-greeting-div">
+                        <a href="#contact" class="button button-greeting">Contact me</a>
+                        <a href="assets/Rohan_Shamanthula_Resume.pdf" download="Resume.pdf" class="button button-greeting download-link-button">Download my resume</a>
+                    </div>
+                </div>
+            </div>
+            <div class="greeting-image-div">
+                <img src="assets/rohan-profile.jpg" alt="Rohan Shamanthula" class="profile-image">
+            </div>
         </div>
     </section>
-    <section class="widgets-row">
-        <div class="widget card">
-            <h3>Skills</h3>
-            <div class="bar-container"><span>Java</span><div class="bar bar-java" style="width:90%">90%</div></div>
-            <div class="bar-container"><span>Spring Boot</span><div class="bar bar-spring" style="width:88%">88%</div></div>
-            <div class="bar-container"><span>React.js</span><div class="bar bar-react" style="width:85%">85%</div></div>
-            <div class="bar-container"><span>AWS</span><div class="bar bar-aws" style="width:80%">80%</div></div>
-            <div class="bar-container"><span>Docker/K8s</span><div class="bar bar-docker" style="width:75%">75%</div></div>
-        </div>
-        <div class="widget card">
-            <h3>Contact</h3>
-            <p>
-                <a href="mailto:shamanthularohan@gmail.com">Email Me</a><br>
-                <a href="contact.html">Contact Form</a>
-            </p>
+
+    <!-- Skills Section -->
+    <section class="main" id="skills">
+        <div class="skills-main-div">
+            <div class="skills-image-div">
+                <img src="assets/developerActivity.svg" alt="Developer Activity" class="skills-image">
+            </div>
+            <div class="skills-text-div">
+                <h1 class="skills-heading">What I do</h1>
+                <p class="subTitle skills-text-subtitle">
+                    JAVA FULL STACK DEVELOPER SPECIALIZING IN CLOUD-NATIVE MICROSERVICES AND SCALABLE APPLICATIONS
+                </p>
+                <div class="software-skills-main-div">
+                    <ul class="dev-icons">
+                        <li class="software-skill-inline"><i class="fab fa-java"></i><p>Java</p></li>
+                        <li class="software-skill-inline"><i class="fab fa-js"></i><p>JavaScript</p></li>
+                        <li class="software-skill-inline"><i class="fab fa-react"></i><p>React.js</p></li>
+                        <li class="software-skill-inline"><i class="fab fa-html5"></i><p>HTML5</p></li>
+                        <li class="software-skill-inline"><i class="fab fa-css3-alt"></i><p>CSS3</p></li>
+                        <li class="software-skill-inline"><i class="fab fa-aws"></i><p>AWS</p></li>
+                        <li class="software-skill-inline"><i class="fab fa-docker"></i><p>Docker</p></li>
+                        <li class="software-skill-inline"><i class="fas fa-database"></i><p>Database</p></li>
+                        <li class="software-skill-inline"><i class="fab fa-python"></i><p>Python</p></li>
+                        <li class="software-skill-inline"><i class="fab fa-npm"></i><p>NPM</p></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="subTitle skills-text">
+                        ⚡ Architect and develop microservices using Spring Boot, reducing deployment time by 40%
+                    </p>
+                    <p class="subTitle skills-text">
+                        ⚡ Build responsive user interfaces with React.js and Angular 14, decreasing load times by 30%
+                    </p>
+                    <p class="subTitle skills-text">
+                        ⚡ Deploy scalable applications on AWS (EC2, S3, Lambda), cutting infrastructure costs by 25%
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
-    <footer>
-        <p>&copy; 2025 Rohan Shamanthula — Powered by GitHub Pages</p>
+
+    <!-- Stack Progress Section -->
+    <section class="main" id="stack-progress">
+        <div class="skill-progress-main-div">
+            <h1 class="skills-heading">Proficiency</h1>
+            <div class="skill-progress-div">
+                <div class="skill-progress-item">
+                    <div class="skill-progress-label">Java/Spring Boot</div>
+                    <div class="skill-progress-bar">
+                        <div class="skill-progress-fill" style="width: 90%">90%</div>
+                    </div>
+                </div>
+                <div class="skill-progress-item">
+                    <div class="skill-progress-label">Cloud & DevOps (AWS, Docker, K8s)</div>
+                    <div class="skill-progress-bar">
+                        <div class="skill-progress-fill" style="width: 85%">85%</div>
+                    </div>
+                </div>
+                <div class="skill-progress-item">
+                    <div class="skill-progress-label">Frontend (React.js, Angular)</div>
+                    <div class="skill-progress-bar">
+                        <div class="skill-progress-fill" style="width: 80%">80%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="main" id="education">
+        <h1 class="skills-heading">Education</h1>
+        <div class="education-cards-div">
+            <div class="education-card">
+                <div class="education-card-header">
+                    <h3>Wichita State University</h3>
+                    <p>Master of Science in Computer Science</p>
+                    <p class="education-duration">2019 - 2021</p>
+                </div>
+                <p class="education-desc">Specialized in software engineering, cloud computing, and distributed systems.</p>
+            </div>
+            <div class="education-card">
+                <div class="education-card-header">
+                    <h3>Gokaraju Rangaraju Institute of Engineering and Technology</h3>
+                    <p>Bachelor of Technology in Electronics and Communication Engineering</p>
+                    <p class="education-duration">2015 - 2019</p>
+                </div>
+                <p class="education-desc">Strong foundation in engineering principles and software development.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section class="main" id="experience">
+        <h1 class="experience-heading">Experiences</h1>
+        <div class="experience-cards-div">
+            <div class="experience-card">
+                <div class="experience-banner" style="background: linear-gradient(135deg, #1780e0 0%, #1461ac 100%);">
+                    <div class="experience-blurred-div"></div>
+                    <div class="experience-div-company">
+                        <h5 class="experience-text-company">INTUIT</h5>
+                    </div>
+                    <div class="experience-roundedimg">
+                        <div class="company-logo">INTUIT</div>
+                    </div>
+                </div>
+                <div class="experience-text-details">
+                    <h5 class="experience-text-role">Java Full Stack Developer</h5>
+                    <h5 class="experience-text-date">June 2024 – Present</h5>
+                    <p class="subTitle experience-text-desc">
+                        Architecting and developing scalable microservices and cloud-native financial solutions using Java, Spring Boot, and AWS. Leading backend development for QuickBooks Books Review and Outbound Dialer platforms.
+                    </p>
+                    <ul>
+                        <li class="subTitle">Contributed to QuickBooks Books Review, implementing backend logic for Grouping, Statements, and Income Tax tabs, ensuring accuracy in financial data aggregation</li>
+                        <li class="subTitle">Developed business logic for Balance Sheet flipping and account mapping, dynamically adapting financial reporting based on business rules</li>
+                        <li class="subTitle">Packaged financial services using Docker containers and coordinated deployments via Kubernetes, embedding the process into CI/CD pipelines</li>
+                        <li class="subTitle">Designed and developed RESTful APIs for the Outbound Dialer platform, enabling businesses to upload CSV contact data and trigger outbound calls through Amazon Connect and Pinpoint Journeys</li>
+                        <li class="subTitle">Implemented high-performance backend services using Java 8 and Java 21 (Spring Boot) for call scheduling, data ingestion, and campaign management workflows</li>
+                        <li class="subTitle">Delivered cloud-native financial solutions on AWS, utilizing AWS Lambda, AWS EC2, AWS S3 and AWS IAM to build secure, scalable, event-driven architectures</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience-card">
+                <div class="experience-banner" style="background: linear-gradient(135deg, #6cbe45 0%, #8dd65f 100%);">
+                    <div class="experience-blurred-div"></div>
+                    <div class="experience-div-company">
+                        <h5 class="experience-text-company">Cognizant</h5>
+                    </div>
+                    <div class="experience-roundedimg">
+                        <div class="company-logo">CTS</div>
+                    </div>
+                </div>
+                <div class="experience-text-details">
+                    <h5 class="experience-text-role">Java Developer</h5>
+                    <h5 class="experience-text-date">June 2022 – October 2022</h5>
+                    <p class="subTitle experience-text-desc">
+                        Migrated monolithic applications to microservices architecture and developed REST APIs to streamline system integrations.
+                    </p>
+                </div>
+            </div>
+            <div class="experience-card">
+                <div class="experience-banner" style="background: linear-gradient(135deg, #ef6133 0%, #ff7a4d 100%);">
+                    <div class="experience-blurred-div"></div>
+                    <div class="experience-div-company">
+                        <h5 class="experience-text-company">HDFC Bank</h5>
+                    </div>
+                    <div class="experience-roundedimg">
+                        <div class="company-logo">HDFC</div>
+                    </div>
+                </div>
+                <div class="experience-text-details">
+                    <h5 class="experience-text-role">Jr Java Developer</h5>
+                    <h5 class="experience-text-date">May 2021 – June 2022</h5>
+                    <p class="subTitle experience-text-desc">
+                        Developed RESTful APIs using Spring Boot and migrated legacy databases to Cassandra for improved scalability.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="main" id="projects">
+        <h1 class="skills-heading">Major Projects</h1>
+        <p class="subTitle project-subtitle">KEY PROJECTS AND PLATFORMS I'VE DEVELOPED AND CONTRIBUTED TO</p>
+        <div class="projects-container">
+            <div class="project-card project-card-light">
+                <div class="project-image">
+                    <div class="project-image-placeholder">Expert Hiring</div>
+                </div>
+                <div class="project-detail">
+                    <h5 class="card-title">Expert Hiring Platform</h5>
+                    <p class="card-subtitle">Mainstream platform for recruiters to hire candidates with workflow tracking and role-based access control. Implemented sign-on bonus feature from backend to database to reporting.</p>
+                    <div class="project-card-footer">
+                        <span class="project-tag" onclick="window.open('https://694c93a191fdb86f217bc6ff--incredible-marzipan-d93fe7.netlify.app/', '_blank')">View Project</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card project-card-light">
+                <div class="project-image">
+                    <div class="project-image-placeholder">QuickBooks</div>
+                </div>
+                <div class="project-detail">
+                    <h5 class="card-title">QuickBooks Books Review</h5>
+                    <p class="card-subtitle">Financial data aggregation platform with backend logic for Grouping, Statements, and Income Tax tabs. Implemented Balance Sheet flipping and account mapping with dynamic business rules.</p>
+                </div>
+            </div>
+            <div class="project-card project-card-light">
+                <div class="project-image">
+                    <div class="project-image-placeholder">Outbound Dialer</div>
+                </div>
+                <div class="project-detail">
+                    <h5 class="card-title">Outbound Dialer Platform</h5>
+                    <p class="card-subtitle">RESTful API platform enabling businesses to upload CSV contact data and trigger outbound calls through Amazon Connect and Pinpoint Journeys. Built with Java 8/21 and Spring Boot.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="main" id="contact">
+        <h1 class="skills-heading">Contact Me ☎️</h1>
+        <p class="subTitle">Discuss a project or just want to say hi? My Inbox is open for all.</p>
+        <div class="contact-main">
+            <div class="contact-text-div">
+                <h1 class="contact-title">Let's Get In Touch</h1>
+                <p class="contact-subtitle">
+                    Discuss a project or just want to say hi? My Inbox is open for all.
+                </p>
+                <div class="contact-details">
+                    <p><i class="fas fa-phone"></i> +1 (316)-928-9781</p>
+                    <p><i class="fas fa-envelope"></i> shamanthularohan@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Mountainview, CA</p>
+                </div>
+                <div class="button-contact-div">
+                    <a href="mailto:shamanthularohan@gmail.com" class="button button-contact">Send Email</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-div">
+        <p class="footer-text">Made with ❤️ by Rohan Shamanthula</p>
+        <p class="footer-text">
+            Theme by <a href="https://github.com/saadpasta/developerFolio" target="_blank">developerFolio</a>
+        </p>
     </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 </body>
 </html>
-
