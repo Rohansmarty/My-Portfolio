@@ -418,6 +418,27 @@ body {
     padding: 2rem;
     box-shadow: var(--lightBoxShadowDark) 0px 10px 30px -15px;
     transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.education-logo-div {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.education-logo {
+    max-width: 150px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px var(--lightBoxShadow);
 }
 
 .education-card:hover {
