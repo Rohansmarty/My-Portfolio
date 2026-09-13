@@ -6,7 +6,7 @@ This repository contains the source code for my personal portfolio website, host
 Live Site
 ---------
 
-- **URL**: `https://rohansmarty.github.io/My-Portfolio/`
+- **URL**: [https://rohansmarty.github.io/My-Portfolio/](https://rohansmarty.github.io/My-Portfolio/)
 
 Tech Stack
 ----------
